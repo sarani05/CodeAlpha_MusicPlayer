@@ -1,0 +1,92 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+  background: #f4f4f4;
+  color: #222;
+}
+
+.player {
+  background: #222;
+  padding: 20px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+body.light .player {
+  background: #fff;
+  color: #000;
+}
+
+.cover-container img {
+  width: 50%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.controls button {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #666;
+}
+
+.progress-container,
+.volume-container {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="range"] {
+  width: 60%;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.playlist li {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.playlist li:hover,
+.playlist li.active {
+  background: #333;
+}
+
+#theme-toggle {
+  margin-top: 10px;
+  background: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
